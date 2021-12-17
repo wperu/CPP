@@ -32,6 +32,7 @@ int main(int ac, char **av)
         {
             while(std::getline(file,line))
             {
+                last_find = 0;
                 while((find = line.find(s1,last_find)) != -1)
                 {
                     tmp_line = line.substr(0,find);
